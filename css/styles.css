@@ -1,0 +1,140 @@
+body{
+  margin: 0;
+  font-size: 15px;
+}
+
+
+/* ------- Global Variables --------- */
+
+:root{
+
+  /* -----Colors Used---------- */
+  /* ---Primary---- */
+  --brightorange:hsl(31, 77%, 52%);
+  --darkcyan:hsl(184, 100%, 22%);
+  --darkercyan:hsl(179, 100%, 13%);
+
+  /* ----Neutral---- */
+  --lightgray:hsla(0, 0%, 100%, 0.75);    //paragraphs
+  --white: hsl(0, 0%, 95%);        //background,headings,buttons
+
+  /* ------Fonts Used---------- */
+  --LexendDeca: 'Lexend Deca', sans-serif;
+  ---BigShouldersDisplay:  'Big Shoulders Display', cursive;
+}
+
+.flex-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+main .btn{
+  margin-left: 2.4rem;
+  padding: .8rem 1.4rem;
+  text-align: center;
+  font-size: 1rem;
+  text-decoration: none;
+  border: 2px solid hsl(0, 0%, 95%);
+  border-radius: 4rem;
+  background-color: hsl(0, 0%, 95%);
+  cursor: pointer;
+}
+
+main .btn:hover{
+  background: transparent;
+  border: 2px solid var(--lightgray);
+  color: #fff !important;
+}
+
+h2{
+  font-size: 1.8rem;
+  color: hsl(0, 0%, 95%);
+  font-family: 'Big Shoulders Display', cursive;
+}
+
+p{
+  font-size: 1rem;
+  color: var(--lightgray);
+  padding: .7rem .4rem;
+  margin-bottom: 6rem;
+  line-height: 1.5;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+/* ------- Global Variables --------- */
+
+/* ---------Site Content ---------- */
+main .cards{
+  margin: 15% 20%;
+  text-align: left;
+}
+
+main .cards .sedan{
+  border-top-left-radius: .6rem;
+  border-bottom-left-radius: .6rem;
+  padding: 5rem 1.8rem;
+  background: var(--brightorange);
+}
+main .cards .suv{
+  padding: 5rem 2.8rem;
+  background: var(--darkcyan);
+}
+main .cards .luxury{
+  border-top-right-radius: .6rem;
+  border-bottom-right-radius: .6rem;
+  padding: 5rem 2.8rem;
+  background: var(--darkercyan);
+}
+
+main .cards .card-content .icon-img img{
+  margin-left: .6rem;
+  width: 18%;
+  height: 18%;
+}
+
+main .cards .card-content .btn-sedan{
+  color: var(--brightorange);
+}
+main .cards .card-content .btn-suv{
+  color: var(--darkcyan);
+}
+main .cards .card-content .btn-luxury{
+  color: var(--darkercyan);
+}
+
+/* ---------Site Content ---------- */
+
+/* -----Responsive 4k---------- */
+
+/* @media(max-width:2560px){
+
+  }
+
+} */
+
+
+/* -----Responsive 4k---------- */
+
+/* ----------Responsive Mobile 375px------ */
+
+@media(max-width: 375px){
+  .flex-row{
+    flex-wrap: wrap;
+  }
+
+  main .cards{
+    margin: 15% 6%;
+  }
+
+  main .cards .sedan{
+    border-bottom-left-radius: 0;
+    border-top-right-radius: .6rem;
+  }
+  main .cards .luxury{
+    border-top-right-radius: 0;
+    border-bottom-left-radius: .6rem;
+  }
+}
+
+/* ----------Responsive Mobile 375px------ */
